@@ -1,7 +1,13 @@
 h1,
 h2,
-p {
+p,
+li {
   font-family: Arial, Helvetica, sans-serif;
+  color: #6f6e6e;
+}
+
+p {
+  font-size: 1.1em;
 }
 
 #main {
@@ -26,7 +32,8 @@ p {
 }
 
 #image {
-  display: inline-block;
+  margin: 0 auto;
+  display: block;
   max-width: 95%;
 }
 
@@ -38,12 +45,32 @@ p {
   max-width: 600px;
   margin: 0 auto;
   line-height: 25px;
+  text-align: justify;
+}
+
+#tribute-info h2 {
+  text-align: center;
 }
 
 #tribute-info ul li {
   padding-top: 15px;
+  font-size: 1.1em;
 }
 
 #tribute-info ul {
   padding-left: 0px;
+}
+
+.bold {
+  font-weight: bold;
+  color: #535353;
+}
+
+@media (max-width: 800px) {
+  h1,
+  h2,
+  p,
+  #tribute-info ul li {
+    font-size: 1em;
+  }
 }
